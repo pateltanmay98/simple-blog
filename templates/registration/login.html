@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
-{% block title %}Edit Post{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block content %}
-    <h1>Update Blog Post</h1>
+    <h1>Login</h1>
 
+    <br/><br/>
     <div class="form-group">
         <form method="POST">
             <table>
                 {% csrf_token %}
                 {{ form.as_table }}
             </table>
-            <button class="btn btn-primary">Update Post</button>
+            <button class="btn btn-primary">Post</button>
         </form>
     </div>
-
- {% endblock %}
+{% endblock %}
